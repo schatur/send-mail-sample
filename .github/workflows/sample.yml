@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Send email
-      uses: schatur/send-mail@v1.0.2
+      uses: schatur/send-mail-sample
       with:
           host: smtp.naver.com
           account: ${{secrets.MAIL_ADDRESS}}
