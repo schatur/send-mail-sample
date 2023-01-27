@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Send email
-      uses: devellany/send-mail@v1.0.2
+      uses: schatur/send-mail@v1.0.2
       with:
           host: smtp.naver.com
           account: ${{secrets.MAIL_ADDRESS}}
@@ -20,4 +20,4 @@ jobs:
           subject: Github Actions job result
           body: file://README.md
           attachments: '[{"path":"README.md"}]'
-          to: devellany@gmail.com
+          to: sheetalchatur51@gmail.com
